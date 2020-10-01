@@ -2,7 +2,7 @@
 //  testUITests.swift
 //  testUITests
 //
-//  Created by Miles Chou on 2020/9/29.
+//  Created by Yifan Zhang on 2020/9/29.
 //
 
 import XCTest
