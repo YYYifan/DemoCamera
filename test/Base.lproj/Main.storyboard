@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Am-aZ-WUZ">
+                                <rect key="frame" x="20" y="130" width="374" height="512"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVP-tt-Mhn">
+                                <rect key="frame" x="30" y="79" width="85" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="yhr-1k-Lrv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Take Photo">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                    <color key="titleShadowColor" red="0.58041698859159196" green="0.58414419152902108" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="TakeSelfie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vwv-wv-9a8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMf-VU-4K0">
+                                <rect key="frame" x="307" y="79" width="77" height="41"/>
+                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="17"/>
+                                <state key="normal" title="All Photos">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                    <color key="titleShadowColor" red="0.58041698860000002" green="0.58414419149999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ShowAllPhotos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tdv-u7-gt6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiv-NO-i3M">
+                                <rect key="frame" x="178" y="673" width="58" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="SavePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Nd-oE-JfP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="0Am-aZ-WUZ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="03G-tx-vUN"/>
+                            <constraint firstItem="0Am-aZ-WUZ" firstAttribute="top" secondItem="rMf-VU-4K0" secondAttribute="bottom" constant="10" id="ABe-WC-gdU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oiv-NO-i3M" secondAttribute="bottom" constant="139" id="BlJ-bO-yuZ"/>
+                            <constraint firstItem="0Am-aZ-WUZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Dwv-5U-drD"/>
+                            <constraint firstItem="oiv-NO-i3M" firstAttribute="top" secondItem="0Am-aZ-WUZ" secondAttribute="bottom" constant="31" id="HKV-dN-8I1"/>
+                            <constraint firstItem="mVP-tt-Mhn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="KqW-VL-5Uu"/>
+                            <constraint firstItem="oiv-NO-i3M" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="178" id="LhC-xe-KPY"/>
+                            <constraint firstItem="mVP-tt-Mhn" firstAttribute="top" secondItem="rMf-VU-4K0" secondAttribute="top" id="RIw-qe-t8N"/>
+                            <constraint firstItem="mVP-tt-Mhn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="Yni-tX-S9T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oiv-NO-i3M" secondAttribute="bottom" constant="139" id="bo4-dW-OHY"/>
+                            <constraint firstItem="oiv-NO-i3M" firstAttribute="centerX" secondItem="0Am-aZ-WUZ" secondAttribute="centerX" id="erP-DN-piR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="oiv-NO-i3M" secondAttribute="trailing" constant="178" id="fu6-vj-563"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rMf-VU-4K0" secondAttribute="trailing" constant="30" id="lJo-Rl-wca"/>
+                            <constraint firstItem="mVP-tt-Mhn" firstAttribute="baseline" secondItem="rMf-VU-4K0" secondAttribute="baseline" id="omg-ah-TPJ"/>
+                            <constraint firstItem="rMf-VU-4K0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mVP-tt-Mhn" secondAttribute="trailing" constant="139" id="tAu-Ce-aDF"/>
+                            <constraint firstItem="0Am-aZ-WUZ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-694.5" id="uGV-fo-3cQ"/>
+                            <constraint firstItem="0Am-aZ-WUZ" firstAttribute="top" secondItem="mVP-tt-Mhn" secondAttribute="bottom" constant="10" id="yuk-B9-B0j"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="uGV-fo-3cQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="Imageshow" destination="0Am-aZ-WUZ" id="NC2-6T-8Pp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-113.04347826086958" y="0.6696428571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="3" width="288" height="512"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
